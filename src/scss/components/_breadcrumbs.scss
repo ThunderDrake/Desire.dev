@@ -1,0 +1,26 @@
+.breadcrumbs {
+  position: relative;
+  padding: 13px 14px;
+  background-color: var(--color-alto);
+
+  &__link {
+    font: var(--font-small);
+    color: var(--color-text);
+  }
+
+  &__list {
+    display: flex;
+    overflow-x: auto;
+    margin: 0;
+
+    &-item {
+      position: relative;
+      padding-right: 8px;
+    }
+  }
+
+  &__list-item:not(:last-child)::after {
+    content: "/";
+    position: absolute;
+  }
+}

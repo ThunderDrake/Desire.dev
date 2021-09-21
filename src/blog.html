@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title> Блог | Desire - авторская мебель</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/breadcrumbs.html')
+      <section class="blog">
+        <div class="container blog__container">
+          <div class="blog__inner">
+            <div class="blog__content">
+              @include('partials/blog__post-excerpt.html')
+              @include('partials/blog__post-video.html')
+              @include('partials/blog__post-text.html')
+              <div class="blog__pagination pagination">
+                <a href="" class="pagination__arrow pagination__arrow--disabled pagination__arrow--left">
+                  <svg class="pagination__arrow-icon">
+                    <use xlink:href="img/sprite.svg#pagination-arrow">
+                  </svg>
+                </a>
+                <ul class="pagination__list">
+                  <li class="pagination__list-item">
+                    <a href="" class="pagination__list-num pagination__list-num--active">1</a>
+                  </li>
+                  <li class="pagination__list-item">
+                    <a href="" class="pagination__list-num">2</a>
+                  </li>
+                </ul>
+                <a href="" class="pagination__arrow pagination__arrow--right">
+                  <svg class="pagination__arrow-icon">
+                    <use xlink:href="img/sprite.svg#pagination-arrow">
+                  </svg>
+                </a>
+              </div>
+            </div>
+            @include('partials/blog__aside.html')
+          </div>
+        </div>
+      </section>
+  </main>
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

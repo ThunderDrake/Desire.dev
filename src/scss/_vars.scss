@@ -1,0 +1,32 @@
+:root {
+  // цвета
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray: #707070;
+  --color-monsoon: #8f8d8d;
+  --color-heading: #363838;
+  --color-text: #5a5a5a;
+  --color-accent: #f1d152;
+  --color-witch-haze: #fff79a;
+  --color-alto: #dfdfdf80;
+
+  // шрифты
+  --font-family-title: "Montserrat", sans-serif;
+  --font-family-main: "OpenSans", sans-serif;
+  --font-title: 700 36px / 51px var(--font-family-title);
+  --font-semi-title: 700 24px / 38px var(--font-family-title);
+  --font-small-label: 700 16px / 23px var(--font-family-title);
+  --font-paragraph: 400 16px / 27px var(--font-family-main);
+  --font-small: 600 14px / 28px var(--font-family-main);
+  --font-collection: 700 20px var(--font-family-title);
+
+  @media screen and (max-width: 650px) {
+    --font-title: 700 28px / 130% var(--font-family-title);
+  }
+
+  @media screen and (max-width: 425px) {
+    --font-semi-title: 700 20px / 26px var(--font-family-title);
+    --font-small: 600 12px / 18px var(--font-family-main);
+    --font-title: 700 26px / 130% var(--font-family-title);
+  }
+}

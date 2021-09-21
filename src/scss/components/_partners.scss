@@ -1,0 +1,22 @@
+.partners {
+  padding: 16px 0 60px;
+
+  &__items {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    padding-bottom: 30px;
+  }
+}
+
+.about__collection {
+  padding-bottom: 70px;
+}

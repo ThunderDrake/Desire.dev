@@ -1,0 +1,32 @@
+// @import 'vars'; если используете scss-переменные - подключите сюда vars, но удалите root из _vars.scss
+// большие компоненты
+@import "./components/header";
+@import "./components/hero";
+@import "./components/collection";
+@import "./components/cta";
+@import "./components/timeline";
+@import "./components/gallery";
+@import "./components/mini-blog";
+@import "./components/footer";
+
+// малые компоненты
+@import "./components/rightside-menu";
+@import "./components/collection-feed";
+@import "./components/breadcrumbs";
+@import "./components/modals";
+
+// страница "О нас"
+@import "./components/about-section";
+@import "./components/partners";
+@import "./components/about-progress";
+
+// страница "Галерея"
+@import "./components/gallery-page";
+
+// страница "Контакты"
+@import "./components/contacts";
+
+// страница "Блог"
+@import "./components/blog-post";
+@import "./components/blog-aside";
+@import "./components/blog-single";

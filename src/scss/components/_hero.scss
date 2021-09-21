@@ -1,0 +1,121 @@
+.hero {
+  &__slider-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 650px) {
+      flex-direction: column;
+    }
+  }
+
+  &__slider-title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 26px;
+    padding-bottom: 26px;
+    font: 700 110px / 135px var(--font-family-title);
+    color: var(--color-heading);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 185px;
+      height: 1px;
+      background-color: #6d7278;
+    }
+
+    @media screen and (max-width: 1300px) {
+      font-size: 60px;
+      line-height: 130%;
+    }
+
+    @media screen and (max-width: 840px) {
+      font-size: 50px;
+    }
+
+    @media screen and (max-width: 650px) {
+      padding-bottom: 13px;
+    }
+  }
+
+  &__slider-img {
+    margin-left: -15%;
+
+    @media screen and (max-width: 1300px) {
+      height: 640px;
+    }
+
+    @media screen and (max-width: 840px) {
+      height: 540px;
+    }
+
+    @media screen and (max-width: 650px) {
+      margin-bottom: 20px;
+      margin-left: 0;
+      height: 440px;
+    }
+
+    @media screen and (max-width: 500px) {
+      height: 300px;
+    }
+  }
+
+  &__slider-text {
+    margin: 0;
+    font: var(--font-paragraph);
+    color: var(--color-text);
+
+    @media screen and (max-width: 650px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__slider-content {
+    margin-left: 25px;
+    max-width: 575px;
+  }
+
+  &__slider-wrapper {
+    position: relative;
+    padding-bottom: 70px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      width: 100%;
+      height: 722px;
+      background-image: url("../img/main-slider-bg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @media screen and (max-width: 840px) {
+        height: 100%;
+      }
+    }
+
+    @media screen and (max-width: 650px) {
+      padding-top: 30px;
+      padding-bottom: 25px;
+    }
+  }
+}
+
+.hero__slider-bullets {
+  width: 8px;
+  height: 8px;
+  background: var(--color-heading);
+  opacity: 1;
+
+  &:not(:last-child) {
+    margin-right: 30px !important; // stylelint-disable-line declaration-no-important
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--color-accent);
+}
